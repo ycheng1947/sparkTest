@@ -1,0 +1,9 @@
+compile
+sbt gen-idea
+sbt/sbt gen-idea
+gen-idea
+sbt gen-idea
+compile
+sbt assembly
+run
+sbt gen-idea
