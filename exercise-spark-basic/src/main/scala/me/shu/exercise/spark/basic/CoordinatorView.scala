@@ -13,7 +13,7 @@ package me.shu.exercise.spark.basic
     def move(bx:Int ,by:Int): Unit ={
       x = ax+bx;
       y = ay+by;
- 
+
     }
 
     override def  toString(): String =  "("+x+","+y+")";
@@ -24,11 +24,13 @@ package me.shu.exercise.spark.basic
 
     def main(args: Array[String]) {
 
+      // pt不可变，不能使用pt=xxx.但是可以调用pt内部方法。
       val pt = new CoordinatorView(10,20)
-      println("The coodinator of the point is "+pt)
 
-      val ptString = pt.toString()
-      println(ptString)
+      println("The coodinator of the point is "+pt.toString())
+
+      pt.move(1,2)
+      println(pt)
     }
   }
 
