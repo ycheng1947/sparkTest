@@ -18,7 +18,7 @@
 	- getOrElse:·value1 getOrElse `No value" should be("xxx")`
 	- `value2.isEmpty should be(true)`
 	- Option可以用来pattern matching
-	>` val someValue: Option[Double] = Some(20.0)`
+	> ` val someValue: Option[Double] = Some(20.0)`
 `val value = someValue match {`
  ` case Some(v) => v`
  ` case None => 0.0`
